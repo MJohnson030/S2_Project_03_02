@@ -1,0 +1,123 @@
+﻿@charset "UTF-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 2
+   
+   Bike the Mountains Tour Style Sheet
+   Author:
+   Date:   
+   
+   Filename: mw_styles.css
+
+*/
+
+
+/* Structural Styles */
+
+html{
+    background-color: rgb(173, 189, 227);
+}
+
+body{
+    background-color: rgb(227, 210, 173);
+    font-family: 'Century Gothic', sans-serif;
+}
+
+footer{
+    background-color: rgb(208, 184, 109);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+address{
+    font: normal;
+    font-size: 0.9em;
+    text-align: center;
+    padding-top: 10px; 
+    padding-bottom: 0px;
+}
+
+/* added background colors for website, body, footer, and address. Added a font family to the body. Added padding to the top and bottom of the footer. In the address, we changed the font size, aligned the to text to the center, and added padding. */
+/* Heading Styles */
+h1, h2{
+    font-weight: normal;
+}
+
+
+/* Navigation Styles */
+nav > ul{
+    list-style-type: none;
+    line-height: 2em;
+    font-size: 0.9em;
+}
+
+nav a:link,
+nav a:visited{
+    text-decoration: none;
+    color: rgb(43, 59, 125);
+}
+
+nav a:hover,
+nav a:active{
+    color: rgb(215, 35, 35);
+}
+
+ 
+
+/* changed the line height and font size of of unordered lists nested inside the navigation. Allowed the navigation to show when a site has been visited, hovered over, or currently active. Text changes color when hovered over. */
+
+/* Article Styles */
+
+article#tour_summary h1{
+    font-size: 2.2em;
+    letter-spacing: 0.2em;
+}
+
+article#tour_summary p{
+    font-size: 1.1em;
+}
+
+article#tour_summary p:first-of-type::first-line{
+    font-size: 1.2em;
+    font-variant: small-caps;
+}
+
+/* added id elements for headings, paragraph. Created a styles rule to make first line of the title appear in small Capital letters. Changed the font size for all elements in Article Styles. Change letter spacing in h1 */
+
+/* Aside Styles */
+
+aside#tour_itinerary h1{
+    font-size: 1.2em;
+}
+
+aside#tour_itinerary h2{
+    font-size: 0.9em;
+}
+
+aside#tour_itinerary p{
+    font-size: 0.8em;
+}
+
+aside h2:nth-child(odd){
+    color: rgb(79, 91, 40);
+}
+
+aside h2:nth-child(even){
+    color: rgb(81, 95, 175);
+}
+
+/* Blockquote Styles */
+
+blockquote{
+    background-color: rgb(173, 189, 227);
+    color: rgb(255, 255, 255);
+    opacity: 0.65;
+}
+
+blockquote p{
+padding: 2.5px 10px 2.5px 10px;
+}
+
+/* Added background color and text-color. Changed the opacity. Changed the padding for the paragraphs in the blockquote.*/
